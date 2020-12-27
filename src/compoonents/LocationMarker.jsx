@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import LocationIcon from '@iconify/icons-mdi/fire-alert';
 
-const LocationMarker = ({ lat, lng, onClick }) => (
+const LocationMarker = ({ onClick }) => (
   <div
     className="location-marker"
     onClick={onClick}
@@ -13,8 +13,6 @@ const LocationMarker = ({ lat, lng, onClick }) => (
 );
 
 LocationMarker.propTypes = {
-  lat: PropTypes.number.isRequired,
-  lng: PropTypes.number.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
